@@ -1,0 +1,123 @@
+[2024-01-17 09:53:17,649: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-17 09:53:18,644: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-17 09:53:18,644: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 09:53:18,644: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 09:53:18,644: INFO: utils: created directory at: artifacts]
+[2024-01-17 09:53:18,644: INFO: utils: created directory at: artifacts/data_ingestion]
+[2024-01-17 09:53:18,644: INFO: stage_01_data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-17 09:53:18,704: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "c:/Users/Devendra/Projects/TextSummarizer/main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\devendra\projects\textsummarizer\src\TextSummarizer\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\devendra\projects\textsummarizer\src\TextSummarizer\components\stage_01_data_ingestion.py", line 37, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\Devendra\anaconda3\envs\TextSummarizer\lib\zipfile.py", line 1647, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\Devendra\anaconda3\envs\TextSummarizer\lib\zipfile.py", line 1701, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2024-01-17 09:53:51,202: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-17 09:53:52,093: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-17 09:53:52,101: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 09:53:52,101: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 09:53:52,101: INFO: utils: created directory at: artifacts]
+[2024-01-17 09:53:52,101: INFO: utils: created directory at: artifacts/data_ingestion]
+[2024-01-17 09:53:52,101: INFO: stage_01_data_ingestion: File already exists of size: ~ 7718 KB]
+[2024-01-17 09:53:52,166: ERROR: main: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow']
+Traceback (most recent call last):
+  File "main.py", line 14, in <module>
+    data_ingestion.main()
+  File "c:\users\devendra\projects\textsummarizer\src\TextSummarizer\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion.extract_zip_file()
+  File "c:\users\devendra\projects\textsummarizer\src\TextSummarizer\components\stage_01_data_ingestion.py", line 37, in extract_zip_file
+    zip_ref.extractall(unzip_path)
+  File "C:\Users\Devendra\anaconda3\envs\TextSummarizer\lib\zipfile.py", line 1647, in extractall
+    self._extract_member(zipinfo, path, pwd)
+  File "C:\Users\Devendra\anaconda3\envs\TextSummarizer\lib\zipfile.py", line 1701, in _extract_member
+    open(targetpath, "wb") as target:
+OSError: [Errno 22] Invalid argument: 'artifacts\\data_ingestion\\samsum_dataset\\test\\data-00000-of-00001.arrow'
+[2024-01-17 09:55:21,613: INFO: config: PyTorch version 2.1.2 available.]
+[2024-01-17 09:55:22,588: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2024-01-17 09:55:22,604: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 09:55:22,604: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 09:55:22,604: INFO: utils: created directory at: artifacts]
+[2024-01-17 09:55:22,604: INFO: utils: created directory at: artifacts/data_ingestion]
+[2024-01-17 09:55:24,964: INFO: stage_01_data_ingestion: artifacts/data_ingestion/data.zip download! with following info: 
+Connection: close
+Content-Length: 7903594
+Cache-Control: max-age=300
+Content-Security-Policy: default-src 'none'; style-src 'unsafe-inline'; sandbox
+Content-Type: application/zip
+ETag: "dbc016a060da18070593b83afff580c9b300f0b6ea4147a7988433e04df246ca"
+Strict-Transport-Security: max-age=31536000
+X-Content-Type-Options: nosniff
+X-Frame-Options: deny
+X-XSS-Protection: 1; mode=block
+X-GitHub-Request-Id: 8E4C:10C9AD:118B0A:1A45BA:65A756B4
+Accept-Ranges: bytes
+Date: Wed, 17 Jan 2024 04:25:24 GMT
+Via: 1.1 varnish
+X-Served-By: cache-del21730-DEL
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1705465524.179693,VS0,VE693
+Vary: Authorization,Accept-Encoding,Origin
+Access-Control-Allow-Origin: *
+Cross-Origin-Resource-Policy: cross-origin
+X-Fastly-Request-ID: bfba9b578bf63ffe16cc7ea204180b4900d63252
+Expires: Wed, 17 Jan 2024 04:30:24 GMT
+Source-Age: 0
+
+]
+[2024-01-17 09:55:25,100: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2024-01-17 09:55:25,100: INFO: main: >>>>>> stage Data Validation stage started <<<<<<]
+[2024-01-17 09:55:25,100: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 09:55:25,100: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 09:55:25,108: INFO: utils: created directory at: artifacts]
+[2024-01-17 09:55:25,108: INFO: utils: created directory at: artifacts/data_validation]
+[2024-01-17 09:55:25,108: INFO: main: >>>>>> stage Data Validation stage completed <<<<<<
+
+x==========x]
+[2024-01-17 09:55:25,108: INFO: main: >>>>>> stage Data Transformation stage started <<<<<<]
+[2024-01-17 09:55:25,108: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 09:55:25,108: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 09:55:25,108: INFO: utils: created directory at: artifacts]
+[2024-01-17 09:55:25,108: INFO: utils: created directory at: artifacts/data_transformation]
+[2024-01-17 09:55:30,146: INFO: main: >>>>>> stage Data Transformation stage completed <<<<<<
+
+x==========x]
+[2024-01-17 09:55:30,146: INFO: main: *******************]
+[2024-01-17 09:55:30,146: INFO: main: >>>>>> stage Model Trainer stage started <<<<<<]
+[2024-01-17 09:55:30,146: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 09:55:30,146: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 09:55:30,146: INFO: utils: created directory at: artifacts]
+[2024-01-17 09:55:30,146: INFO: utils: created directory at: artifacts/model_trainer]
+[2024-01-17 23:37:44,409: INFO: main: >>>>>> stage Model Trainer stage completed <<<<<<
+
+x==========x]
+[2024-01-17 23:37:44,416: INFO: main: *******************]
+[2024-01-17 23:37:44,416: INFO: main: >>>>>> stage Model Evaluation stage started <<<<<<]
+[2024-01-17 23:37:44,457: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-17 23:37:44,469: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-17 23:37:44,469: INFO: utils: created directory at: artifacts]
+[2024-01-17 23:37:44,469: INFO: utils: created directory at: artifacts/model_evaluation]
+[2024-01-17 23:40:02,981: INFO: rouge_scorer: Using default tokenizer.]
+[2024-01-17 23:40:03,231: INFO: main: >>>>>> stage Model Evaluation stage completed <<<<<<
+
+x==========x]
+[2024-01-18 00:04:43,896: INFO: server: Started server process [10848]]
+[2024-01-18 00:04:43,908: INFO: on: Waiting for application startup.]
+[2024-01-18 00:04:43,908: INFO: on: Application startup complete.]
+[2024-01-18 00:04:43,923: INFO: server: Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)]
+[2024-01-18 00:05:23,507: INFO: utils: yaml file: config\config.yaml loaded successfully]
+[2024-01-18 00:05:23,515: INFO: utils: yaml file: params.yaml loaded successfully]
+[2024-01-18 00:05:23,515: INFO: utils: created directory at: artifacts]
+[2024-01-18 00:05:23,515: INFO: utils: created directory at: artifacts/model_evaluation]
+[2024-01-18 00:06:10,875: INFO: server: Shutting down]
+[2024-01-18 00:06:10,986: INFO: on: Waiting for application shutdown.]
+[2024-01-18 00:06:11,019: INFO: on: Application shutdown complete.]
+[2024-01-18 00:06:11,022: INFO: server: Finished server process [10848]]
